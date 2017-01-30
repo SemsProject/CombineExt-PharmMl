@@ -1,0 +1,34 @@
+= PharmML Extension for CombineExt =
+This is an extension for the [combine-ext:wiki CombineExt library] to support [http://pharmml.org/ PharmML].
+
+== Ingredients of this Repository ==
+
+* [source:src/main/java/de/unirostock/sems/cbext/pharmml/PharmMlRecognizer.java PharmMlRecognizer.java] a recognizer for PharmML files. It extends the [combine-ext:source:src/main/java/de/unirostock/sems/cbext/FormatRecognizer.java​ FormatRecognizer class], see [combine-ext:ExtendCombineFormatizer ExtendCombineFormatizer] and [combine-ext:CombineFormatizer CombineFormatizer]
+
+* [source:src/main/java/de/unirostock/sems/cbext/pharmml/PharmMlIcon.java PharmMlIcon.java] a icon collection providing the PharmML icon. It extends the [combine-ext:source:src/main/java/de/unirostock/sems/cbext/IconCollection.java​ IconCollection class], see [combine-ext:ExtendCombineIconizer ExtendCombineIconizer] and [combine-ext:CombineIconizer CombineIconizer]. it delivers the following icon: [[Image(source:src/main/resources/icons/Green-pharmml.png)]]
+
+* [source:src/main/java/de/unirostock/sems/cbext/pharmml/Demo.java Demo.java] demonstrating how to use this library
+
+
+
+== Download and Use ==
+* Binaries are available from our binary repository, or see BuildCombineExtPharmMl
+* include the project via Maven: ([http://mvn.sems.uni-rostock.de/releases/de/unirostock/sems/CombineExtPharmML find latest version id], import the [https://sems.uni-rostock.de/2013/10/maven-repository/ SEMS Maven repository])
+{{{
+#!xml
+<dependency>
+    <groupId>de.unirostock.sems</groupId>
+    <artifactId>CombineExtPharmML</artifactId>
+    <version>$VERSION</version>
+</dependency>
+}}}
+* see above (parts of this project) to learn how to use this package
+
+== DEV ==
+* source:src/main/java/de/unirostock/sems/cbext/pharmml
+* [http://jdoc.sems.uni-rostock.de/CombineExtPharmML/ JavaDoc]
+* BuildCombinePharmMl
+* find open bugs/issues and requests: {1}
+* file an issue or feature request: [/newticket]
+
+
